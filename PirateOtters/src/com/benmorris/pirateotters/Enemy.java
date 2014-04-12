@@ -4,7 +4,7 @@ import android.graphics.Rect;
 
 
 import android.graphics.Rect;
-
+                    //complete abstract class, other enemies extend this class but it is not used on its own
 
 public class Enemy {
 
@@ -18,7 +18,7 @@ public class Enemy {
     private int movementSpeed;
 
     // Behavioral Methods
-    public void update() {
+    public void update() {              //simple logic, telling the enemy to follow you
         follow();
         centerX += speedX;
         speedX = bg.getSpeedX() * 5 + movementSpeed;
